@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Permis de construire : liste par département et API (Sitadel)</title>
+<meta name="description" content="4 869 permis et déclarations accordés de juillet à septembre 2026 dans 6 départements, 11 175 logements. Liste en CSV ou par API.">
+<link rel="canonical" href="https://gaelasao.github.io/permis-de-construire/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Permis de construire : liste par département et API (Sitadel)">
+<meta property="og:description" content="4 869 permis et déclarations accordés de juillet à septembre 2026 dans 6 départements, 11 175 logements. Liste en CSV ou par API.">
+<meta property="og:url" content="https://gaelasao.github.io/permis-de-construire/">
+<meta property="og:site_name" content="Gaël Gerard · Data APIs">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://gaelasao.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Permis de construire", "item": "https://gaelasao.github.io/permis-de-construire/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Les permis sont-ils à jour ?", "acceptedAnswer": {"@type": "Answer", "text": "Le SDES publie la base Sitadel une fois par mois. Chaque exécution lit le dernier mois publié."}}, {"@type": "Question", "name": "Peut-on filtrer par commune ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, par code de département ou par code commune INSEE, et par période."}}, {"@type": "Question", "name": "Les noms des particuliers apparaissent-ils ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. La base ne nomme le demandeur que lorsqu’il s’agit d’une personne morale."}}, {"@type": "Question", "name": "Combien ça coûte ?", "acceptedAnswer": {"@type": "Answer", "text": "5 $ pour 1 000 autorisations, facturés par Apify. Le plan gratuit d’Apify inclut 5 $ d’usage par mois."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="in"><a class="brand" href="../">Gaël Gerard <span>· Data APIs</span></a><nav class="nav" aria-label="Main"><a href="../building-permits/">Building permits</a><a href="../ai-visibility/">AI visibility</a><a href="../keyword-research-api/">Keyword API</a><a href="../about/">About</a></nav></div></header>
+<main id="main">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Accueil</a> › Permis de construire</nav>
+<h1>Permis de construire : la liste par département</h1>
+<p class="lead">De début juillet à fin septembre 2026, 4 869 autorisations d’urbanisme qui créent des logements ou des locaux ont été accordées dans six grands départements, pour 11 175 logements. Ces chiffres viennent de la base Sitadel du SDES, publiée chaque mois.</p>
+<p class="updated">Données vérifiées le 28 octobre 2026. Dernier mois publié : septembre 2026.</p>
+<h2>Les six départements</h2>
+<div class="table-wrap"><table><thead><tr><th>Département</th><th class=n>Autorisations</th><th class=n>Logements</th><th class=n>Locaux</th><th class=n>Logements créés</th><th>Communes les plus actives</th></tr></thead><tbody><tr><td>Paris (75)</td><td class=n>178</td><td class=n>55</td><td class=n>123</td><td class=n>567</td><td>Paris 08, Paris 20, Paris 15</td></tr><tr><td>Rhône (69)</td><td class=n>689</td><td class=n>379</td><td class=n>310</td><td class=n>2 477</td><td>Villeurbanne, Lyon 2e, Lyon 3e</td></tr><tr><td>Bouches-du-Rhône (13)</td><td class=n>823</td><td class=n>486</td><td class=n>337</td><td class=n>1 768</td><td>Marseille, Arles, Aubagne</td></tr><tr><td>Gironde (33)</td><td class=n>1 129</td><td class=n>745</td><td class=n>384</td><td class=n>1 932</td><td>Bordeaux, Gujan-Mestras, Andernos-Les-Bains</td></tr><tr><td>Haute-Garonne (31)</td><td class=n>831</td><td class=n>507</td><td class=n>324</td><td class=n>2 689</td><td>Toulouse, Muret, Tournefeuille</td></tr><tr><td>Loire-Atlantique (44)</td><td class=n>1 219</td><td class=n>845</td><td class=n>374</td><td class=n>1 742</td><td>Nantes, Saint-Nazaire, La Baule-Escoublac</td></tr></tbody></table></div>
+<p class="note">« Logements » et « locaux » : autorisations classées par le SDES selon ce qu’elles créent. Permis de construire (PC) et déclarations préalables (DP).</p>
+<h2>Qui dépose ces permis</h2>
+<p>La base nomme le demandeur quand c’est une personne morale (promoteur, bailleur social, entreprise). Les plus actifs du trimestre :</p>
+<ul><li><b>Paris</b> : PARIS HABITAT-OPH, VILLE DE PARIS, FONDATION DE L ARMEE DU SALUT, PIERRE PROMOTION</li><li><b>Rhône</b> : H S B, ENEDIS, VALLON DES HOPITAUX AMENAGEMENT, DEUX FLEUVES RHONE HABITAT -OFFICE PUBLIC DE L&#x27;HABITAT DU R…</li><li><b>Bouches-du-Rhône</b> : SOCIETE PUBLIQUE DES ECOLES MARSEILLAISES, ENEDIS, AIRBUS HELICOPTERS, SCI JOFFRE</li><li><b>Gironde</b> : BORDEAUX METROPOLE, ENEDIS, BAYAM.1, HOTEL CAP FERRET</li><li><b>Haute-Garonne</b> : AIRBUS, ENEDIS, COMMUNE DE TOULOUSE, SOCIETE ANONYME D&#x27;HABITATIONS A LOYER MODERE ALTEAL</li><li><b>Loire-Atlantique</b> : ENEDIS, NW JOULES, METROPOLE NANTES METROPOLE, CA PORNIC AGGLO PAYS DE RETZ</li></ul>
+<section class="cta"><h2>Obtenir la liste complète</h2><p>Chaque autorisation avec la commune, l’adresse, le type, la date, la surface et le nombre de logements, et le demandeur quand c’est une société (SIREN, SIRET, code APE). Filtre par département ou par commune, export CSV, Excel ou JSON. 5 $ pour 1 000 autorisations, sans abonnement.</p><p><a class="btn" href="https://apify.com/gaelasao/planning-data-au-nz-fr/examples/france-permis-construire-logements">Exporter les permis de construire</a><a class="btn ghost" href="https://apify.com/gaelasao/planning-data-au-nz-fr">Toutes les sources</a></p></section>
+<h2>Par API</h2>
+<pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/gaelasao~planning-data-au-nz-fr/run-sync-get-dataset-items?token=VOTRE_JETON&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;country&quot;:&quot;FR&quot;,&quot;departmentCodes&quot;:[&quot;69&quot;],&quot;maxResults&quot;:500}&#x27;</code></pre>
+<h2>À propos des données</h2>
+<p>Source : <a href="https://www.statistiques.developpement-durable.gouv.fr/donnees-des-permis-de-construire-et-autres-autorisations-durbanisme" rel="nofollow">SDES — base Sitadel</a>, mise à jour mensuelle. Licence : <a href="https://www.data.gouv.fr/datasets/liste-des-permis-de-construire-et-autres-autorisations-durbanisme" rel="nofollow">Licence Ouverte (SDES fr-lo)</a>. La base recense les autorisations qui créent des surfaces, pas toutes les demandes. Ce service est aussi déclaré comme réutilisation sur <a href="https://www.data.gouv.fr/reuses/building-permits-api-les-permis-de-construire-sitadel-en-api">data.gouv.fr</a>.</p>
+<section class="faq"><h2>Questions fréquentes</h2><h3>Les permis sont-ils à jour ?</h3><p>Le SDES publie la base Sitadel une fois par mois. Chaque exécution lit le dernier mois publié.</p><h3>Peut-on filtrer par commune ?</h3><p>Oui, par code de département ou par code commune INSEE, et par période.</p><h3>Les noms des particuliers apparaissent-ils ?</h3><p>Non. La base ne nomme le demandeur que lorsqu’il s’agit d’une personne morale.</p><h3>Combien ça coûte ?</h3><p>5 $ pour 1 000 autorisations, facturés par Apify. Le plan gratuit d’Apify inclut 5 $ d’usage par mois.</p></section>
+</main>
+<footer class="site-foot"><div class="in">
+<p>Site de <a href="../about/">Gaël Gerard</a>, développeur indépendant en France. Je crée ces outils et je suis rémunéré quand ils sont utilisés sur Apify. Ce n’est pas un site officiel d’Apify ni d’une administration.</p><p>Les données viennent de portails publics en open data, sous la licence indiquée. Mise à jour le 28 octobre 2026.</p>
+</div></footer>
+</body>
+</html>
